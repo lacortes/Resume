@@ -1,0 +1,208 @@
+/* Colors
+	#30C5FF (baby blue)
+	#E5F4E3 (light tan)
+	#D0CFEC (very light purple)
+	#F1BF98 (light orange red)
+	#78D5D7 (light sea green)
+
+	Alternative
+	------------
+	#96858F (Dusty)
+	#6D7993 (Lavendar)
+	#Overcast (#9099A2)
+	#Paper (#D5D5D5)
+*/
+
+/* Global Styles
+------------------*/
+
+/** Box Model fix
+-------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+/* End Box Model fix*/
+header {
+	padding-top: 50px;
+	position: relative;
+}
+body {
+	font-family: 'Assistant', sans-serif;
+	font-size: 1.1em;
+	/*background-color: #6D7993;*/
+}
+h1 {
+	/*font-size: 80px;*/
+	font-size: 2.5em;
+}
+h2 {
+	/*font-size: 40px;*/
+	font-size: 2.5em;
+	margin-top: 0;
+	/*border: 1px solid black;*/
+}
+h3 {
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: 'Quicksand', sans-serif;
+}
+
+header h1, header h2 {
+	color: char;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #E5F4E3;
+}
+
+.profile-pic {
+	border-radius: 50%;
+}
+
+.col-narrow {
+	width: 30%;
+	float: left;
+	/*min-height: 175px;*/
+	/*border: 1px dashed blue;*/
+}
+
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 30px;
+	/*min-height: 175px;*/
+	/*border: 1px dashed blue;*/
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.btn {
+	text-decoration: none;
+	/*background: #E5F4E3;*/
+	color: white;
+	padding: 10px;
+	display: inline-block;
+	font-size: 15px;
+}
+i {
+	color: black;
+}
+
+/* End Global styles */
+
+/* Header and Footer
+---------------------*/
+
+header, footer {
+	/*background: #30C5FF;*/
+	/*background: #9099A2;*/
+	background-color: #6D7993;
+}
+
+footer {
+	text-align: center;
+	/*float: left;*/
+}
+footer h2{
+	margin-bottom: 2px;
+}
+
+.footer-content {
+	padding: 20px;
+	display: inline-block;
+	/*border: 1px solid black;*/
+}
+
+.footer-content a {
+	/*border: 1px solid black;*/
+	top-margin: 0;
+	padding: 10px 10px;
+}
+.download {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* End Header and footer*/
+
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 40px;
+	overflow: auto;
+	/*border: 1px solid black;*/
+}
+/* Navigation
+---------------------*/
+nav {
+	text-align: center;
+	/*background-color: #F1BF98;*/
+	background-color: #96858F;
+	position: fixed;
+	top: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700; 
+	color: white;
+}
+nav a:hover {
+	color: black;
+}
+/* End of Navigation */
+
+/* Work Experience*/
+.work {
+	/*background: #D0CFEC;*/
+	background-color: #D5D5D5;
+}
+h3 ~ p {
+	margin: 0;
+}
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+/* End Work Experience*/
+
+/* Eductation 
+-----------------*/
+.education {
+	/*background: #F1BF98;*/
+	/*background-color: #9099A2;*/
+	background-color: #D5D5D5;
+}
+/* End Education*/
+.computer-skills {
+	/*background: #E5F4E3;*/
+	/*background: #D0CFEC;*/
+	/*background-color: #D5D5D5;*/
+	background-color: #F5F5F5;
+}
+.activities {
+	/*background: #D0CFEC;*/
+	/*background: #E5F4E3;*/
+	/*background-color: #D5D5D5;*/
+	background-color: #F5F5F5;
+}
+.coursework {
+	/*background: #D0CFEC;*/
+	background-color: #D5D5D5;
+}
