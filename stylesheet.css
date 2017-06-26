@@ -34,6 +34,8 @@ body {
 	font-family: 'Assistant', sans-serif;
 	font-size: 1.1em;
 	/*background-color: #6D7993;*/
+	padding: 0;
+	margin: 0;
 }
 h1 {
 	/*font-size: 80px;*/
@@ -54,36 +56,26 @@ h1, h2 {
 }
 
 header h1, header h2 {
-	color: char;
+	/*color: white;*/
+	color: #E5E5E5;
 	margin: 0;
 }
 
 a {
 	text-decoration: none;
 }
-
 a:hover {
 	color: #E5F4E3;
 }
-
+.container {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #96858F; 
+}
 .profile-pic {
 	border-radius: 50%;
 }
 
-.col-narrow {
-	width: 30%;
-	float: left;
-	/*min-height: 175px;*/
-	/*border: 1px dashed blue;*/
-}
-
-.col-wide {
-	width: 70%;
-	float: left;
-	padding-left: 30px;
-	/*min-height: 175px;*/
-	/*border: 1px dashed blue;*/
-}
 .uppercase {
 	text-transform: uppercase;
 }
@@ -109,7 +101,9 @@ header, footer {
 	/*background: #9099A2;*/
 	background-color: #6D7993;
 }
-
+.menu {
+	display: none;
+}
 footer {
 	text-align: center;
 	/*float: left;*/
@@ -117,7 +111,6 @@ footer {
 footer h2{
 	margin-bottom: 2px;
 }
-
 .footer-content {
 	padding: 20px;
 	display: inline-block;
@@ -152,9 +145,10 @@ nav {
 	background-color: #96858F;
 	position: fixed;
 	top: 0;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	/*padding-top: 15px;*/
+	padding-left: 0;
 	width: 100%;
+	overflow: hidden;
 }
 nav a {
 	display: inline-block;
@@ -166,6 +160,9 @@ nav a {
 }
 nav a:hover {
 	color: black;
+}
+.icon {
+	display: none;
 }
 /* End of Navigation */
 
@@ -205,4 +202,66 @@ h3 ~ p {
 .coursework {
 	/*background: #D0CFEC;*/
 	background-color: #D5D5D5;
+}
+
+/* Media Queries
+---------------- */
+
+@media (min-width: 900px) {
+	.col-narrow {
+		width: 30%;
+		float: left;
+		/*min-height: 175px;*/
+		/*border: 1px dashed blue;*/
+	}
+	.col-wide {
+		width: 70%;
+		float: left;
+		padding-left: 30px;
+		/*min-height: 175px;*/
+		/*border: 1px dashed blue;*/
+	}
+}
+@media (max-width: 899px) {
+	header {
+		text-align: center;
+	}
+	.profile-pic {
+		width: 200px;
+	}
+}
+@media (max-width: 859px) {
+	.profile-pic {
+		margin-top: 50px;
+	}
+}
+@media screen and (max-width: 860px) {
+	.menu {
+		display: block;
+		height: 10px;
+		width: 100%;
+		cursor: pointer;
+		padding: 20px;
+		background: url(Bars.png) no-repeat 95% center;
+		background-color: #404040;
+	}
+	.drop-down {
+		height: 0;
+	}
+	.drop-down.open {
+		height: auto;
+	}
+	nav {
+		background-color: #505050;
+	}
+	.drop-down a {
+		display: block;
+		font-size: 1.2em;
+		padding: 5px;
+		border-bottom: 1px solid #404040;
+	}
+	.about {
+		padding-top: 0;
+	}
+
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- embeded code to use fonts from fontawesome -->
 	<script src="https://use.fontawesome.com/7723d5066e.js"></script>
 	<meta charset="UTF-8"> 
@@ -10,24 +11,31 @@
 </head>
 <body>
 
-	<header  id="about">
-
+	<header>
+		<div class="container">
 		<nav>
-			<a href="#about">About</a>
-			<a href="#work">Work Experience</a>
-			<a href="#skills">Computer Skills</a>
-			<a href="#coursework">Coursework</a>
-			<a href="#activites">Activities</a>
-			<a href="#education">Education</a>
+			<a href="Javascript:void(0);" class="menu" onclick="perform();"></a>
+			<div class="drop-down">
+				<a href="#about">About</a>
+				<a href="#work">Work Experience</a>
+				<a href="#skills">Computer Skills</a>
+				<a href="#coursework">Coursework</a>
+				<a href="#activites">Activities</a>
+				<a href="#education">Education</a>
+			</div>
 		</nav>
+		</div>
 
 
-		<div class="content-wrap">
+		<div class="content-wrap about" id="about">
 			<img class="profile-pic col-narrow" src="pic.png" alt="Profile Picture"/>
 			<div class="col-wide">
 				<h1>Luis Cortes</h1>
-				<h2>Student</h2>
-				<p>Add your profile summary here. You can have several paragraphs or add links.</p>
+				<h2>Student, Computer Science</h2>
+				
+				<p>I am moving towards my last acadmeic year at Cal Poly Pomona, and I am really looking forward towards my completion of a Bechelor's degree. Studying Computer Science at Cal Poly Pomona has thus far been a great rewarding experience. I have learned so much in terms of time-management, set-goals, discipline, and of course -- software development.</p>
+
+				<p>Besides learning for school credit, I have found learning outside the classroom to be a great hobby. I have learned to play the piano and guitar; a very enjoyable hobby that I will always keep. I have recently developed an interest for electronics, and have built some circuits for fun, and even used my coding knowledge to write a couple Arduino sketches. This website is my first attempt at web-development, and found it very rewarding. I am also currently working on an Android application, that will be up in a couple of weeks. </p>
 			</div>
 		</div>
 		<a href="Resume_PDF.pdf" class="btn download" download>Download PDF</a>
@@ -35,6 +43,7 @@
 
 	<main>
 
+		<!-- Work Experience -->
 		<section class="work" id="work">
 			<div class="content-wrap">
 				<h2>Work Experience</h2>
@@ -61,9 +70,50 @@
 					</ul>
 				</div>
 				<!-- End of Job Details -->
-			</div>
+
+				<!-- Job Details -->
+
+				<div class="col-narrow">
+					<h3>Laborer</h3>
+					<p class="uppercase">Diamond Staffing</p>
+					<p>December 2014 - January 2015</p>
+				</div>
+
+				<div class="col-wide job-description">
+
+					<p>Key conributions:</p>
+					<ul>
+						<li>Loaded and unloaded cargo safely on to pallets</li>
+						<li>Organized cargo and packages by state</li>
+						<li>Responsible for unloading a trailer at an efficient rate</li>
+					</ul>
+				</div>
+
+				<!-- End of Job Details -->
+
+				<!-- Job Details -->
+				<div class="col-narrow">
+					<h3>Maintenance / Sanitation</h3>
+					<p class="uppercase">Flying food group</p>
+					<p>June 2014 - September 2014</p>
+				</div>
+
+				<div class="col-wide job-description">
+
+					<p>Key conributions:</p>
+					<ul>
+						<li>Responsible for repainting an entire building</li>
+						<li>Maintained and fixed parts in need of repair throughout the building</li>
+						<li>Thoroughly cleaned and sanitized rooms used by production crew</li>
+						<li>
+							Responsible for leaving production rooms and all tools thoroughly clean for prodcution team
+						</li>
+					</ul>
+				</div>
+			<!-- End of Job Details -->
 
 		</section>
+		<!-- End of Work Experience -->
 
 		<!--  Computer Skills -->
 		<section class="computer-skills" id="skills">
@@ -146,4 +196,10 @@
 		</div>
 	</footer>
 </body>
+
+<script>
+	function perform() {
+		document.querySelector(".drop-down").classList.toggle("open");	
+	}
+</script>
 </html>
